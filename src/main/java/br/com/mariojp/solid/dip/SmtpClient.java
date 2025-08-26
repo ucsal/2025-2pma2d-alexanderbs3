@@ -7,5 +7,6 @@ public class SmtpClient {
         }
         if(to == null || !to.contains("@")) throw new IllegalArgumentException("email inválido");
         // envia ...
+        System.out.println("[SMTP] Email enviado para: " + to);
     }
 }
